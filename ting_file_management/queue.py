@@ -12,8 +12,6 @@ class Queue:
         return self.queue.pop(0)
 
     def search(self, index):
-        print(self.queue)
-        print(index)
         if -1 < index < len(self.queue):
             return self.queue[index]
         else:
