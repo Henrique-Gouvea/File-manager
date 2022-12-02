@@ -2,7 +2,6 @@ import sys
 from ting_file_management.file_management import txt_importer
 
 def process(path_file, instance):
-    print('TTTTTTTTTTTTTTTTTTTTTTTTTTTT')
     text_list: list = txt_importer(path_file)
     infoDict: dict = {
         "name_path_file": path_file,
