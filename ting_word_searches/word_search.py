@@ -5,7 +5,7 @@ import re
 
 def construct_object(index, line, type):
     if(type == "linha"):
-        return { "linha": index + 1 }
+        return {"linha": index + 1}
     return {
         "linha": index + 1,
         "conteudo": line
