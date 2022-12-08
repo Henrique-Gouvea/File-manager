@@ -1,12 +1,12 @@
-from ting_file_management.file_process import process
-from ting_file_management.queue import Queue
+# from ting_file_management.file_process import process
+# from ting_file_management.queue import Queue
 import re 
 
 
 def exists_word(word, instance):
     list_word_found: list = []
     for file in instance.queue:
-        ocorrency:list = []
+        ocorrency: list = []
         for index, line in enumerate(file["linhas_do_arquivo"]):
             if len(re.findall(word, line, flags=re.IGNORECASE)) > 0:
                 ocorrency.append({"linha": index + 1})
